@@ -1,0 +1,10 @@
+.example-sidenav-container {
+    /* width: 100px; */
+    height:100%;
+    /* width: 100%; */
+    /* flex-direction: rows;
+    flex-wrap: wraps; */
+}
+.sidenav-container{
+ width:120px
+}

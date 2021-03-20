@@ -1,0 +1,44 @@
+<div class="tasks">
+    <div cdkDropListGroup>
+    <div class="example-container">
+      <h2>Assigned</h2>
+      <div
+        cdkDropList
+        [cdkDropListData]="Assigned"
+        class="example-list"
+        (cdkDropListDropped)="drop($event)">
+        <mat-card class="example-box" *ngFor="let item of Assigned" cdkDrag>{{item}}</mat-card>
+      </div>
+    </div>
+    <div class="example-container">
+      <h2>InProgress</h2>
+      <div
+        cdkDropList
+        [cdkDropListData]="InProgress"
+        class="example-list"
+        (cdkDropListDropped)="drop($event)">
+        <mat-card class="example-box" *ngFor="let item of InProgress" cdkDrag>{{item}}</mat-card>
+      </div>
+    </div>
+    <div class="example-container">
+        <h2>Reviewed</h2>
+        <div
+          cdkDropList
+          [cdkDropListData]="Reviewed"
+          class="example-list"
+          (cdkDropListDropped)="drop($event)">
+          <mat-card class="example-box" *ngFor="let item of Reviewed" cdkDrag>{{item}}</mat-card>
+        </div>
+      </div>
+      <div class="example-container">
+        <h2>Deployed</h2>
+        <div
+          cdkDropList
+          [cdkDropListData]="Deployed"
+          class="example-list"
+          (cdkDropListDropped)="drop($event)">
+          <mat-card class="example-box" *ngFor="let item of Deployed" cdkDrag>{{item}}</mat-card>
+        </div>
+      </div>
+  </div>
+  </div>
